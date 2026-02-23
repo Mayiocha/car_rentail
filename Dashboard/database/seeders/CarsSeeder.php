@@ -32,6 +32,26 @@ class CarsSeeder extends Seeder
             
             'created_at'=>date('Y-m-d h:m:s')
         ]);
+
+        DB::table("cars")->insert([
+            'model'=>'Tundra',
+            'year'=>2001,
+            'color'=>'azul',
+            'license_plate'=>'00002',
+            'mileage'=>1200,
+            'lat'=>1,
+            'lng'=>1,
+            'is_premiun'=>1,
+            'rentail_count'=>1,
+            'daily_rate'=>1,
+            'status'=>'avaible',
+
+            'brand_id'=>1,
+            
+            
+            'created_at'=>date('Y-m-d h:m:s')
+        ]);
+
         $dato1 = new Car();
         $dato1 -> model = 'F-150';
         $dato1 -> year = 2019;
