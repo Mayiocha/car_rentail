@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('free_extra_hours');
 
             $table->timestamps();
+            //hola
         });
     }
 
