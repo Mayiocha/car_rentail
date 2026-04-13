@@ -25,6 +25,9 @@ class User extends Authenticatable
         'loyalty_points',
         'loyalty_level_id'
     ];
+    public function zone(){
+        return $this->belongsTo(Zone::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
